@@ -30,7 +30,7 @@ const QRCodeGenerator = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 flex justify-center items-center p-4">
       <div className="w-full max-w-md bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8">
-        
+
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           QR Generator
@@ -51,19 +51,16 @@ const QRCodeGenerator = () => {
               generateQR();
             }
           }}
-          className="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 mb-4"
-        />
+          className="w-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 mb-4"/>
 
         {/* Generate Button */}
         <button
           onClick={generateQR}
           disabled={loading}
-          className={`w-full py-3 rounded-xl font-semibold text-white transition-all duration-300 ${
-            loading
-              ? "bg-gray-400 cursor-not-allowed"
-              : "bg-blue-600 hover:bg-blue-700 active:scale-95"
-          }`}
-        >
+          className={`w-full py-3 rounded-xl font-semibold text-white transition-all duration-300 ${loading
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-blue-600 hover:bg-blue-700 active:scale-95"
+            }`}>
           {loading ? "Generating..." : "Generate QR"}
         </button>
 
@@ -71,8 +68,7 @@ const QRCodeGenerator = () => {
         {(text || qrCode) && (
           <button
             onClick={clearQR}
-            className="w-full mt-3 bg-red-500 hover:bg-red-600 active:scale-95 text-white py-3 rounded-xl font-semibold transition-all duration-300"
-          >
+            className="w-full mt-3 bg-red-500 hover:bg-red-600 active:scale-95 text-white py-3 rounded-xl font-semibold transition-all duration-300">
             Clear
           </button>
         )}
@@ -84,16 +80,14 @@ const QRCodeGenerator = () => {
               <img
                 src={qrCode}
                 alt="QR Code"
-                className="mx-auto rounded-lg"
-              />
+                className="mx-auto rounded-lg"/>
             </div>
 
             {/* Download Button */}
             <Link
               to={qrCode}
-              download="qrcode.png"
-              className="inline-block mt-5 bg-green-600 hover:bg-green-700 active:scale-95 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
-            >
+              download={`qr-${Date.now()}.png`}
+              className="inline-block mt-5 bg-green-600 hover:bg-green-700 active:scale-95 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300">
               Download QR
             </Link>
           </div>
