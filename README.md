@@ -1,29 +1,31 @@
-# 🚀 Interview Practice Hub
+# 🚀 React Interview Practice Hub
 
-A modern collection of React.js mini projects built to practice common frontend interview questions and improve React development skills.
+A modern collection of **React.js mini projects** designed to practice common frontend interview questions and strengthen React development skills. Each project focuses on a specific concept frequently asked in technical interviews.
 
 ## 🌐 Live Demo
 
-> Add your Vercel deployment link here after deployment.
+![Home Page](./screenshots/home.png)
 
-**Live:** https://your-live-link.vercel.app
+🔗 **Live Website:** https://react-interview-hub.vercel.app/
 
----
+## 📂 GitHub Repository
 
-## 📸 Preview
-
-> Add screenshots here after deployment.
+🔗 **Repository:** https://github.com/gulshan44/interview-practice-hub
 
 ---
 
 ## ✨ Features
 
-- 🔍 Search Projects
-- 📱 Fully Responsive Design
-- 🌙 Dark UI
-- ⚡ Built with React + Vite
-- 🎨 Styled using Tailwind CSS
-- 🚀 Professional Dashboard
+* 🚀 15+ React Interview Mini Projects
+* 🔍 Real-time Project Search
+* 📱 Fully Responsive Design
+* 🌙 Modern Dark Theme UI
+* ⚡ Fast Performance with Vite
+* 🎨 Styled with Tailwind CSS
+* 🧩 Reusable React Components
+* 📂 React Router Navigation
+* 💻 Beginner to Intermediate React Concepts
+* 🎯 Interview-Oriented Practice
 
 ---
 
@@ -49,17 +51,73 @@ A modern collection of React.js mini projects built to practice common frontend 
 
 ## 🛠️ Tech Stack
 
-- React.js
-- Vite
-- Tailwind CSS
-- React Router DOM
-- React Icons
+* React.js
+* Vite
+* Tailwind CSS
+* React Router DOM
+* React Icons
+* JavaScript (ES6+)
 
 ---
 
-## 📦 Installation
+## 📥 Installation
 
 Clone the repository
 
-```bash
+bash
 git clone https://github.com/gulshan44/interview-practice-hub.git
+
+Go to the project directory
+
+bash
+cd interview-practice-hub
+
+Install dependencies
+
+bash
+npm install
+
+Start the development server
+
+bash
+npm run dev
+
+Build for production
+
+bash
+npm run build
+
+---
+
+## 🎯 Learning Objectives
+
+This project helps you practice:
+
+* React Fundamentals
+* useState Hook
+* Conditional Rendering
+* List Rendering
+* Form Handling
+* API Integration
+* React Router
+* Component Reusability
+* Responsive Design
+* Tailwind CSS
+* Clean Code Practices
+
+---
+
+## 👨‍💻 Author
+
+**Gulshan Verma**
+
+* GitHub: https://github.com/gulshan44
+* Portfolio: https://react-interview-hub.vercel.app/
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+Happy Coding! 🚀
